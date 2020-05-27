@@ -33,6 +33,13 @@ def kesha_maker(array)
   result
 end
 
+def kesha_maker(array)
+  array.map.with_index do |word, i|
+    word[2] == $
+    word
+  end
+end
+
 
 def find_a(array)
   array.select { |word| word.start_with?("a") } 
