@@ -27,7 +27,7 @@ end
 def kesha_maker(array)
   result = []
   array.each do |word|
-    new_word = "#{word[0..1]}"$"#{word[3..-1]}"
+    new_word = "#{word[0..1]}$#{word[3..-1]}"
     result << new_word
   end
   result
