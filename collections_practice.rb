@@ -9,7 +9,7 @@ end
 
 
 def sort_array_char_count(array)
-  array.sort { |el| el.length }
+  array.sort { |el_1, el_2| el_2.length <=> el_1.length }
 end
 
 
