@@ -27,7 +27,7 @@ end
 
 
 def kesha_maker(array)
-  array.map.with_index do |word, i|
+  array.each.with_index do |word, i|
     words = []
     word.each_char.with_index do |char, i| 
       word[2] == "$"
