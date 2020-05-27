@@ -28,8 +28,10 @@ end
 
 def kesha_maker(array)
   array.map.with_index do |word, i|
-    word[i][2] == "$"
-    word
+    word.each do |char| 
+      word[2] == "$"
+      word
+    end
   end
 end
 
