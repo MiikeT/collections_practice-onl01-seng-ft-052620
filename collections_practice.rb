@@ -9,5 +9,6 @@ end
 
 
 def sort_array_char_count(array)
-  array.sort { |el| el.length.reverse }
+  reversed = array.sort { |el| el.length }
+  reversed.reverse
 end
