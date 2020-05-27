@@ -27,14 +27,16 @@ end
 
 
 def kesha_maker(array)
+  result = []
   array.each.with_index do |word, i|
     words = []
     word.each_char.with_index do |char, i| 
       word[2] == "$"
       words << word
     end
+    result << words
   end
-  words
+  result
 end
 
 
