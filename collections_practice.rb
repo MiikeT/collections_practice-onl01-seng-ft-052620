@@ -24,17 +24,11 @@ def reverse_array(array)
 end
 
 
-
-
 def kesha_maker(array)
   result = []
-  array.each.with_index do |word, i|
-    words = []
-    word.each_char.with_index do |char, i| 
-      word[2] == "$"
-      words << word
-    end
-    result << words
+  array.each do |word|
+    new_word = "#{word[0..1]}$#{word[3..-1]}"
+    result << new_word
   end
   result
 end
